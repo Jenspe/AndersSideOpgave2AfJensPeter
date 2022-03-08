@@ -1,0 +1,62 @@
+h1, h2, h3, h4, h5, h6, p, ul, ol, table, tr, td, span, div { 
+   font-family: Arial, Helvetica, Sans-Serif; 
+   /* AB 24.01.2002 Netscape 4.7 retter sig ikke efter overordnet angivelse f.eks. paa body,
+   derfor de mange tag-navne. */ 
+}
+body {
+  background-color: rgb(255, 255, 255);
+  font-family: Arial, Helvetica, Sans-Serif; 
+}
+ 
+table.toptekst { 
+   font-size: 80%; 
+  background: #fff387; 
+  color: black;
+  border-width: 0; 
+  width : 100%;
+}
+
+
+table.undertekst { 
+  text-align: center;
+  font-size: 80%; 
+  background: #fff387; 
+  color: black;
+  border-width: 0; 
+  width : 100%;
+}
+
+tr {
+  vertical-align : top;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-item-right{
+  flex: 33%;
+}
+
+.flex-item-middle{
+  flex: 33%;
+}
+
+.flex-item-left{
+  flex: 33%;
+}
+
+@media (max-width: 800px){
+  .flex-item-right, .flex-item-middle, .flex-item-left{
+    flex: 100%
+  }
+}
+  
+pre, code { font-family: monospace; }
+div.center { text-align: center; }
+div.right { text-align: right; }
+div.bundtekst { font-size: 60%; text-align: right; }
+
+.out {	text-decoration : line-through; }
+.new {	background-color : yellow; 	color: black; }
